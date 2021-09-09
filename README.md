@@ -7,7 +7,9 @@
 2.目标文件保存格式：文件名_种类_该种类下第n个.jpg
 使用指南；
 1.打开sorted.py代码文件，对应自己已标注好的文档对下列参数进行修改，并在根目录下新建好对应的文件夹：
+
 ![Image text](./dirs.png)
+
     type_list = ['continuous tin', 'pseudo soldering', 'missing part']
     #声明标注文档文件夹地址、代切割图片文件夹地址与目标种类文件夹地址
     Annotation_dir = './Annotations/'
