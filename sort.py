@@ -24,6 +24,8 @@ def get_typeindex(typename):#函数用于获取种类索引号(0-2)
 Annotation_dir = './Annotations/'
 img_dir = './images/'
 sorted_path = ['./continuous tin/','./pseudo soldering/','./missing part/']
+for type_path in sorted_path:#自动创建对应类型的文件夹，若文件夹已存在不会报错
+    os.makedirs(type_path, exist_ok = True)
 #获取所有文档名称与图片名称
 xml_list = os.listdir(Annotation_dir)
 img_list = os.listdir(img_dir)
